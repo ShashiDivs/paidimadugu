@@ -32,7 +32,7 @@ female_count = len(data[data['Gender'].str.lower() == 'female'])
 # Display total voters and gender count
 total_voters = len(data)
 st.write(f"Total Voters: {total_voters}")
-st.write(f"Male: {male_count} Feamel: {female_count}")
+st.write(f"Male: {male_count} and Female: {female_count}")
 
 # Pie chart for gender distribution
 fig, ax = plt.subplots()
