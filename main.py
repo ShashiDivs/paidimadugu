@@ -1,4 +1,5 @@
 import streamlit as st
+import openpyxl
 
 hide_github_icon = """
 <style>

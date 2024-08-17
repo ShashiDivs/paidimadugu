@@ -1,8 +1,9 @@
 import pandas as pd
+import openpyxl
 
 def load_data(filepath):
     """Load data from a CSV file and clean it."""
-    data = pd.read_csv('thimmayapalli.csv',encoding='latin1')
+    data = pd.read_excel('pidimadugu_records.xlsx')
     data['Gender'] = data['Gender'].str.strip()  # Strip whitespace from the 'Gender' column
     return data
 
