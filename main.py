@@ -77,7 +77,6 @@ if st.button('Show People Within Age Range', key='age_range'):
         st.write(f"Number of people aged {min_age} to {max_age}: {age_count}")
         st.write(f"Percentage of total: {age_percentage:.2f}%")
         
-        # Pie chart for age range distribution
         fig, ax = plt.subplots()
         ax.pie([age_count, total_voters - age_count], labels=[f'{min_age}-{max_age}', 'Others'], autopct='%1.1f%%', startangle=90)
         ax.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
